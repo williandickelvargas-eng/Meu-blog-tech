@@ -1,36 +1,251 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,
-        initial-scale=1.0">
-        <title>Blog</title>
-        <style>
-            header{
-                background-color: #183C63;
-                color: #FFFFFF;
-                text-align: center;
-                max-width: 800px ;
-                margin: 0 auto
-            }
-            main {
-                background-color: #FFFFFF;
-                color: #183C63;
-                max-width: 800px ;
-                margin: 0 auto
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-    <h1>Meu blog tech</h1>
-    <p>Vou compartilhar conhecimentos sobre 
-    futebol</p>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #f1f5f2;
+        color: #222;
+    }
+
+    header {
+        background: linear-gradient(135deg, #075e32, #0ca64f);
+        color: white;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    header h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 20px;
+    }
+
+    nav {
+        background: #063b22;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #52e887;
+    }
+
+    nav a:hover {
+        color: #52e887;
+    }
+    .container {
+    nav a:hover {
+        color: #52e887;
+    }
+        max-width: 1100px;
+        margin: auto;
+        padding: 40px 20px;
+    }
+
+    .intro {
+    nav a:hover {
+        color: #52e887;
+    }
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .intro h2 {
+        color: #075e32;
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .intro p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+        transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+    }
+
+    .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card h3 {
+        color: #075e32;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .card p {
+        line-height: 1.5;
+        color: #555;
+    }
+
+            margin: 5px 10px;
+        }
+    }
+</style>
+
+    .curiosidades {
+        margin-top: 50px;
+        background: #075e32;
+        color: white;
+        padding: 35px;
+        border-radius: 15px;
+    }
+
+    .curiosidades h2 {
+        margin-bottom: 20px;
+    }
+
+    .curiosidades ul {
+        line-height: 2;
+        padding-left: 25px;
+    }
+
+    footer {
+        margin-top: 50px;
+        background: #063b22;
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+
+    @media (max-width: 600px) {
+        header h1 {
+            font-size: 35px;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 5px 10px;
+        }
+    }
+</style>
+
+</head> <body>
+<header>
+    <h1>⚽ Mundo do Futebol</h1>
+    <p>Paixão, história e emoção dentro das quatro linhas!</p>
 </header>
-<main>
-    <h2>Meu primeiro post</h2>
-    <p>Por: Willian Dickel</p>
-    <p>Boas-vindas ao meu novo blog! Aqui vou
-    compartilhar meus conhecimentos sobre futebol.</p>
-    </body>
-<main>
+            margin: 5px 10px;
+        }
+    }
+</style>
+
+
+<nav>
+    <a href="#historia">História</a>
+    <a href="#estadio">Estádios</a>
+    <a href="#jogadores">Jogadores</a>
+    <a href="#curiosidades">Curiosidades</a>
+</nav>
+            margin: 5px 10px;
+        }
+    }
+</style>
+
+
+<main class="container">
+
+    <section class="intro" id="historia">
+        <h2>O esporte mais popular do mundo</h2>
+        <p>
+            O futebol é um esporte que reúne milhões de pessoas ao redor do planeta.
+            Com duas equipes, uma bola e muita paixão, cada partida pode criar
+            momentos inesquecíveis.
+        </p>
+    </section>
+
+    <section class="cards">
+
+        <div class="card" id="estadio">
+            <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=900&q=80"
+                 alt="Jogador de futebol em campo">
+            <div class="card-content">
+                <h3>⚽ O Futebol</h3>
+                <p>
+                    O objetivo é marcar mais gols que o adversário durante a partida.
+                    Técnica, velocidade e trabalho em equipe são fundamentais.
+                </p>
+            </div>
+        </div>
+
+        <div class="card" id="jogadores">
+            <img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&w=900&q=80"
+                 alt="Estádio de futebol">
+            <div class="card-content">
+                <h3>🏟️ Grandes Estádios</h3>
+                <p>
+                    Os estádios são palco de grandes partidas e momentos históricos
+                    que ficam marcados na memória dos torcedores.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=900&q=80"
+                 alt="Bola de futebol">
+            <div class="card-content">
+                <h3>🏆 Grandes Jogadores</h3>
+                <p>
+                    Ao longo da história, diversos jogadores se destacaram por seu
+                    talento, habilidade e conquistas.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="curiosidades" id="curiosidades">
+        <h2>💡 Curiosidades sobre o futebol</h2>
+
+        <ul>
+            <li>Uma partida oficial normalmente dura 90 minutos.</li>
+            <li>Cada equipe começa a partida com 11 jogadores.</li>
+            <li>O cartão amarelo representa uma advertência.</li>
+            <li>O cartão vermelho resulta na expulsão do jogador.</li>
+            <li>A Copa do Mundo é uma das competições esportivas mais populares do planeta.</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>⚽ Página sobre Futebol — Feita em HTML e CSS</p>
+</footer>
+
+</body> </html>
